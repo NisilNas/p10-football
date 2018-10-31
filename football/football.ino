@@ -30,7 +30,7 @@ void setup()
 { 
  delay(3000);   // safety delay
 
-    myled.setbrightness(brightness);      //set brigthness
+    myled.setbrightness(brightness);      //set brigthness.
  
     myled.init(3,4,8,9 ,2);   // p10 pin configuration .... please refer the img
  // myled.showmsg_single_scroll("WELCOME",1,3,0);  // welcome scroll text
@@ -41,7 +41,7 @@ void setup()
      
          m=0;  // set stating minute to 0
                    
-          myled.showmsg_single_scroll("    Let's FOOTBALL   ",1,3,0);   // intro msg
+          myled.showmsg_single_scroll("    Let's FOOTBALL   ",1,3,0);   // intro msg.
    
      
 
@@ -57,11 +57,11 @@ void loop() {
     s=0;     // reset variable s
   }
   char msg[10];
-  sprintf(msg, " %d :: %d", m, s);  // join all variable together into a string named msg
+  sprintf(msg, " %d :: %d", m, s);  // join all variable together into a string named msg.
   
             
 
-  myled.showmsg_single_static(msg,0); // display the msg
+  myled.showmsg_single_static(msg,0); // display the msg.
   
   s=s+1;   // increment second's variable s
   delay(880);  // 800 milli seconds delay  for each second. The rest 200 milli seconds is taken by the p10 diplay functions
